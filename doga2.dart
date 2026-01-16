@@ -87,7 +87,7 @@ osszeg = int.parse(terulet)*100;
   print("B sávba ${Bdb} telek esik, az adó ${Bossz} Ft.");
    print("C sávba ${Cdb} telek esik, az adó ${Cossz} Ft.");
 
-print("6. feladat");
+print("6. feladat. A több sávba sorolt utcák:");
 
 List<String> problemak = [];
 
@@ -115,7 +115,6 @@ for (var i in adatok) {
   }
 }
 
-print("7. feladat");
 
 File f = File("fizetendo.txt");
 List<String> ki = [];
@@ -144,7 +143,4 @@ for (var a in adoszamok) {
 }
 
 f.writeAsStringSync(ki.join("\n"));
-
-
-
 }
